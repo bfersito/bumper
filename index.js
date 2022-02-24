@@ -111,7 +111,7 @@ client.on("message", async (message) => {
 
 
 client.on('guildCreate', async guild => {
-  const channel = client.channels.cache.get('925598546361729054')
+  const channel = client.channels.cache.get(config.logs)
   const embed = new Discord.MessageEmbed()
   .setTitle(`✨ - Nuevo server`)
   .addField(`🏠 - Nombre:`, guild.name)
@@ -124,7 +124,7 @@ client.on('guildCreate', async guild => {
 })
 
 client.on('guildDelete', async guild => {
-  const channel = client.channels.cache.get('925598546361729054')
+  const channel = client.channels.cache.get(config.logs)
   const embed = new Discord.MessageEmbed()
   .setTitle(`🧨 - Eliminado de un server`)
   .addField(`🏠 - Nombre:`, guild.name)
