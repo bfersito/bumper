@@ -14,7 +14,6 @@ client.editsnipes = new Map();
 const cooldowns = new Collection();
 const escapeRegex = (str) => str.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
 require('dotenv').config();
-const bfer = 'вfег ت 🎄'
 let prefixs = new db.crearDB("prefixs", "servers");
 
 
@@ -37,7 +36,7 @@ for (const file of readdirSync('./comandos/')) {
 client.once("ready", () => {
     console.log(`🟢  -> Bot online como ${client.user.tag} y activo en ${client.guilds.cache.size} servidores. Observando a ${client.users.cache.size} usuarios`)
       setInterval(function (){
-    var status = [`👥 ${client.guilds.cache.reduce((fatand, fatandButGuild) => fatand + fatandButGuild.memberCount, 0)} usuarios 👥`, `📁 ${client.guilds.cache.size} servidores 📁`, `🚀 Utiliza b!bump 🚀`, `🔩  Prefix: b! 🔩`]
+    var status = [`👥 ${client.guilds.cache.reduce((fatand, fatandButGuild) => fatand + fatandButGuild.memberCount, 0)} usuarios 👥`, `📁 ${client.guilds.cache.size} servidores 📁`, `🚀 Utiliza b!bump 🚀`, `🔩  Prefix: b! 🔩`, "👑 Creado por: вfег ت  👑"]
   var randomStatus = Math.floor(Math.random()*(status.length));
   client.user.setPresence({
        status: "dnd",
