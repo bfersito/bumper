@@ -15,7 +15,7 @@ const cooldowns = new Collection();
 const escapeRegex = (str) => str.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
 require('dotenv').config();
 let prefixs = new db.crearDB("prefixs", "servers");
-
+const config = require("./config.json")
 
 require('http')
 	.createServer((req, res) => res.end(`¡El bot esta online como: SaferBot`))
