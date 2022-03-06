@@ -1,5 +1,4 @@
 const Discord = require('discord.js'); 
-const bumps = require('discord-interchat')
 const db = require('megadb')
 let descripciones = new db.crearDB('descripciones', "bumps")
 
